@@ -1,0 +1,171 @@
+.container{
+    background-image: url("/car1.jpeg");
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-attachment: fixed;
+    margin-top: 10rem;
+    gap: 20px;
+    color: white;
+    text-align: center;
+}
+.container h1{
+    font-size: 70px;
+}
+.container p{
+    font-size: 30px;
+    color: blanchedalmond;
+}
+.container span{
+    color: blanchedalmond;
+}
+.container button{
+    height: 40px;
+    border-radius: 10px;
+    color: white;
+    width: 15rem;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    background-color: black;
+}
+.icons{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 10rem;
+    padding: 10rem;
+    color: gray;
+}
+.before{
+    background-image: url("/before.jpeg");
+    width: 50rem;
+    background-position: right;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 20px;    
+    border-top-left-radius: 20px;
+
+}
+.after{
+    background-image: url("/after.jpeg");
+    width: 50rem;
+    height: 70rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: right;
+    color: white;
+    padding: 20px;  
+    border-top-right-radius: 20px;
+}
+.con{
+    display: flex;
+    justify-content: center;
+   
+}
+.brands{
+    display: flex;
+    justify-content: center;
+    gap: 10rem;
+    padding: 10rem;
+}
+
+.headline{
+    padding: 30px;
+    margin-left: 10rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+}
+.wash4{
+    display: flex;
+    justify-content: center;
+}
+.map{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10rem;
+}
+.map h2{
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+@media screen and (max-width:659px) {
+    .map{
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:393px) {
+   .before{
+      background-position: center;
+      height: 30rem;
+   }
+   .map img{
+    width: 20rem;
+   }
+   .after{
+      height: 30rem;
+   }
+   .brands{
+    display: none;
+   }
+}
+@media screen and (max-width:574px) {
+   .before{
+      background-position: center;
+      height: 30rem;
+   }
+   .after{
+      height: 30rem;
+   }
+   .brands{
+    margin-left: -80px;
+   }
+}
+
+
+@media screen and (max-width:597px) {
+     .container{
+        background-position: center;
+     }
+     .container h1{
+        font-size: 30px;
+     }
+}
+@media screen and (max-width:997px) {
+    .wash4 img{
+        width: 50rem;
+    }
+    .headline{
+        margin-left: 2rem;
+    }
+    .brands{
+        gap: 3rem;
+    }
+    .map{
+        gap: 2rem;
+        padding: 30px;
+    }
+}
+@media screen and (max-width:809px) {
+    .wash4 img{
+        width: 30rem;
+        height: 30rem;
+    }
+    .brands{
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,101 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.header h1{
+   text-align: center;
+}
+.header span{
+    color:steelblue;
+}
+/* .header h1{
+    font-size: 40px;
+} */
+/* .btn{
+    display: flex;
+    gap: 20px;
+} */
+.btn button{
+    height: 60px;
+    width: 10rem;
+    font-size: 20px;
+    border: none;
+}
+.btn1{
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: aqua;
+    cursor: pointer;
+}
+.btn2{
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    cursor: pointer;
+}
+.main{
+    background-color: gray;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-radius: 20px;
+}
+.main h1{
+    font-size: 30px;
+}
+.main p{
+    font-size: 23px;
+}
+
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    justify-content: center;
+    gap: 8rem;
+    color:  white;
+    padding: 30px;
+}
+
+@media screen and (max-width:1134px) {
+    .grid{
+        gap: 5rem;
+    }
+}
+@media screen and (max-width:1000px) {
+    .grid{
+        gap: 2rem;
+    }
+}
+@media screen and (max-width:835px) {
+    .main p{
+        font-size:20px ;
+    }
+    .main h1{
+        font-size:20px ;
+    }
+}
+@media screen and (max-width:773px) {
+    .grid{
+        grid-template-columns: auto auto;
+    }
+    .main p{
+        font-size:15px ;
+    }
+    .main h1{
+        font-size:20px ;
+    }
+}
+@media screen and (max-width:456px) {
+    .grid{
+        grid-template-columns: auto;
+    }
+    .main p{
+        font-size:15px ;
+    }
+    .main h1{
+        font-size:20px ;
+    }
+}

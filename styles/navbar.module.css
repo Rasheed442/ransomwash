@@ -1,0 +1,61 @@
+.container{
+    display: flex;
+    padding: 30px;
+    cursor: pointer;
+    padding-top: 15px;
+    color: white;
+    justify-content: space-between;
+}
+.container h2{
+    color: white;
+}
+.navlink{
+    display: flex;
+    gap: 30px;
+}
+.navlink p{
+    color: white;
+    font-weight: 500;
+}
+.navm{
+    display: flex;
+    gap: 30px;
+}
+.navm p{
+    color: white;
+    font-weight: 500;
+}
+.navmenu{
+    display: none;
+}
+.navicon{
+    display: none;
+}
+@media screen and (max-width:1100px) {
+
+    .navicon{
+        display: block;
+    }
+   .navlink{
+    display: none;
+   }
+   .navmenu{
+    display: block;
+    position: absolute;
+    display: flex;
+    top: 60px;
+    gap: 20px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+    width: 15rem;
+    height: 100vh;
+    left: 0;
+    flex-direction: column;
+   }
+   .navm{
+    display: flex;
+    font-size: 22px;
+    flex-direction: column;
+   }
+}

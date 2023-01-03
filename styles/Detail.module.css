@@ -1,0 +1,99 @@
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 90px;
+    text-align: center;
+}
+.header h1{
+    font-size: 40px;
+}
+.header h4{
+    font-size: 25px;
+    font-weight:400;
+
+}
+.header  p{
+    color: rgb(47, 88, 201);
+    font-size: 20px;
+    cursor: pointer;
+}
+.container{
+    transition: 0.5s;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px  gray;
+}.container:hover{
+    transform: scale(1.1);
+}
+
+.container button{
+    width: 10rem;
+    height: 40px;
+    font-size: 15px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 10px;
+}
+.gridout{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: center;
+    padding: 30px;
+    transition: 0.5s;
+    gap: 5rem;
+    
+}
+
+@media screen and (max-width:1264px) {
+    .gridout{
+        gap:3rem ;
+    }
+}
+@media screen and (max-width:1170px) {
+    .gridout{
+        grid-template-columns: repeat(2,auto);
+    }
+    .container{
+        padding: 70px;
+    }
+}
+@media screen and (max-width:829px) {
+   
+    .container{
+        padding: 50px;
+    }
+}
+@media screen and (max-width:723px) {
+   
+    .container{
+        padding: 20px;
+    }
+}
+@media screen and (max-width:628px) {
+   
+   .gridout{
+    grid-template-columns: auto;
+   }
+   .container{
+    padding: 100px;
+    font-size: 20px;
+   }
+}
+@media screen and (max-width:536px) {
+   
+  
+   .container{
+    padding: 50px;
+   }
+}

@@ -1,0 +1,95 @@
+.container{
+    padding: 30px;
+    display: grid;
+    justify-content: center;
+    gap: 40px;
+    grid-template-columns: repeat(3,auto);
+}
+.background{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+    background-color: white;
+    border: 1px solid gainsboro;
+    align-items: center;
+    border-radius: 20px;
+    padding: 30px;
+    text-align: center;
+    width: 20rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.card button{
+    background-color: red;
+    color: white;
+    border: none;
+    height: 40px;
+    font-size: 15px;
+    cursor: pointer;
+    width: 10rem;
+    border-radius: 10px;
+}
+.star{
+    color: orange;
+}
+.font{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.font p{
+    text-align: start;
+}
+.font span{
+    text-decoration: underline;
+}
+.name{
+    display: flex;
+    justify-content: space-between;
+}
+.feed{
+    display: flex;
+    gap: 10px;
+}
+.feed img{
+    border-radius: 20px;
+}
+.star1{
+    color: orange;
+    text-align: start;
+}
+.wash{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px;
+}
+.wash h1 {
+    font-size: 60px;}
+.wash p {
+    font-size: 25px;
+}
+@media screen and (max-width:1246px) {
+    .container{
+        grid-template-columns: auto auto;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:827px) {
+    .container{
+        grid-template-columns: auto ;
+    }
+}
+@media screen and (max-width:400px) {
+   .background{
+    padding: 10px;
+   }
+}
