@@ -30,6 +30,7 @@
 }
 .navicon{
     display: none;
+    color: black;
 }
 @media screen and (max-width:1100px) {
 
@@ -43,10 +44,11 @@
     display: block;
     position: absolute;
     display: flex;
-    top: 60px;
+    top: 0;
     gap: 20px;
     padding: 20px;
-    background-color: black;
+    padding-top: 80px;
+    background-color: aqua;
     color: white;
     width: 15rem;
     height: 100vh;

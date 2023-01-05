@@ -27,7 +27,7 @@ function booking() {
 
     const detail = {email,model,car,colors,plate,address,Firstname,Lastname,number,cardholder,cardnumber,mmyy,cvc}
    async function handler(e){
-      const response = await fetch ("https://x8ki-letl-twmt.n7.xano.io/api:O8cBFVK1/authentication",{
+      const response = await fetch ("https://localhost:3001/create",{
         method:"POST",
         headers:{"Content-Type":"application/json"},
         body:JSON.stringify(detail)
